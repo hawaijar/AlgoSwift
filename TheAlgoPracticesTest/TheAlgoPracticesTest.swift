@@ -10,4 +10,8 @@ class TheAlgoPracticesTest: XCTestCase {
         let result = commonCharacters(["abc", "bcd", "cbad"])
         XCTAssertEqual(Set(result), Set(["b", "c"]))
     }
+    func testGenerateDocument() {
+        let result = generateDocument("Bste!hetsi ogEAxpelrt x ", "AlgoExpert is the Best!")
+        XCTAssertEqual(result, true)
+    }
 }
